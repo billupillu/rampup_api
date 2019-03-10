@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @upload.user %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @upload.info %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @upload.course %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @upload.activity %>
+</p>
+
+<p>
+  <strong>Iframe:</strong>
+  <%= @upload.iframe %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @upload.description %>
+</p>
+
+<%= link_to 'Edit', edit_upload_path(@upload) %> |
+<%= link_to 'Back', user_path(current_user.id) %>

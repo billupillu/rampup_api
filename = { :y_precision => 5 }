@@ -1,0 +1,16 @@
+=> [32m#<PDF::Reader::Turtletext:0x0000556d7abd5528[0m
+ @options[32m=[0m{},
+ @reader[32m=[0m
+  [32m#<PDF::Reader:0x0000556d7abd53c0[0m
+   @objects[32m=[0m
+    [32m#<PDF::Reader::ObjectHash:0x0000556d7abd5280[0m
+     @cache[32m=[0m[32m#<PDF::Reader::ObjectCache:0x0000556d7ae04830[0m @objects[32m=[0m{}[32m>[0m,
+     @io[32m=[0m[32m#<StringIO:0x0000556d7abd5140[0m[32m>[0m,
+     @pdf_version[32m=[0m[1;35m1.3[0m,
+     @sec_handler[32m=[0m[1;36mnil[0m,
+     @trailer[32m=[0m{[33m:Size[0m=>[1;34m11[0m, [33m:Root[0m=>[32m#<PDF::Reader::Reference:0x0000556d7ae072b0[0m @gen[32m=[0m[1;34m0[0m, @id[32m=[0m[1;34m1[0m[32m>[0m, [33m:Info[0m=>[32m#<PDF::Reader::Reference:0x0000556d7ae06ba8[0m @gen[32m=[0m[1;34m0[0m, @id[32m=[0m[1;34m10[0m[32m>[0m},
+     @xref[32m=[0m
+      [32m#<PDF::Reader::XRef:0x0000556d7abd4bc8[0m
+       @io[32m=[0m[32m#<StringIO:0x0000556d7abd5140[0m[32m>[0m,
+       @trailer[32m=[0m{[33m:Size[0m=>[1;34m11[0m, [33m:Root[0m=>[32m#<PDF::Reader::Reference:0x0000556d7ae072b0[0m @gen[32m=[0m[1;34m0[0m, @id[32m=[0m[1;34m1[0m[32m>[0m, [33m:Info[0m=>[32m#<PDF::Reader::Reference:0x0000556d7ae06ba8[0m @gen[32m=[0m[1;34m0[0m, @id[32m=[0m[1;34m10[0m[32m>[0m},
+       @xref[32m=[0m{[1;34m1[0m=>{[1;34m0[0m=>[1;34m19[0m}, [1;34m2[0m=>{[1;34m0[0m=>[1;34m93[0m}, [1;34m3[0m=>{[1;34m0[0m=>[1;34m147[0m}, [1;34m4[0m=>{[1;34m0[0m=>[1;34m222[0m}, [1;34m5[0m=>{[1;34m0[0m=>[1;34m390[0m}, [1;34m6[0m=>{[1;34m0[0m=>[1;34m1522[0m}, [1;34m7[0m=>{[1;34m0[0m=>[1;34m1690[0m}, [1;34m8[0m=>{[1;34m0[0m=>[1;34m2423[0m}, [1;34m9[0m=>{[1;34m0[0m=>[1;34m2456[0m}, [1;34m10[0m=>{[1;34m0[0m=>[1;34m2574[0m}}[32m>[0m[32m>[0m[32m>[0m[32m>[0m

@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+<p>
+  <strong>Token:</strong>
+  <%= @user.token %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> 
+
+<h3>File Uploads</h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Info</th>
+      <th>Course</th>
+      <th>Activity</th>
+      <th>Iframe</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% current_user.uploads.each do |upload| %>
+      <tr>
+        <td><%= upload.info %></td>
+        <td><%= upload.course %></td>
+        <td><%= upload.activity %></td>
+        <td><%= upload.iframe %></td>
+<!--         <td><%#= upload.description %></td>
+        <td><%#= upload.file.url %></td> -->
+        <td><%= link_to 'Show', upload %></td>
+        <td><%= link_to 'Edit', edit_upload_path(upload) %></td>
+        <td><%= link_to 'Destroy', upload, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Upload', new_upload_path %>

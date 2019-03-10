@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Api2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">  
+      <%= yield %>
+    </div>  
+  </body>
+</html>
+
+
+<!--        
+      <p class="notice"><%#= notice %></p>
+      <p class="alert"><%#= alert %></p>
+<%#- if user_signed_in? %>
+        <li><%#= link_to t('auth.sign_out'), destroy_user_session_path, method: 'delete' %></li>
+       <%# else %>
+        <li><%#= link_to t('auth.sign_in'), new_user_session_path %></li>
+        <li><%#= link_to t('auth.sign_up'), new_user_registration_path %></li>
+      <%# end %>  -->

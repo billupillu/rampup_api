@@ -1,0 +1,12 @@
+<h1>Welcome To Sample RampUp API</h1>
+<p>Click the following button to get access details.</p>
+<br>
+<%if current_user%>
+	<%if current_user.token.nil? || current_user.token == ''%>
+		<%=link_to 'User Page', edit_user_path(current_user.id)%>
+	<%else%>
+		<%=link_to 'User Page', user_path(current_user.id)%>
+	<%end%>	
+<%else%>
+<%=link_to 'User Page', '/users/sign_in'%>
+<%end%>
