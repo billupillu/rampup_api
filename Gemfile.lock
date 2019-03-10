@@ -129,6 +129,7 @@ GEM
     pdf-reader (1.1.1)
       Ascii85 (~> 1.0.0)
       ruby-rc4
+    pg (1.1.4)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -241,6 +242,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   paperclip
   pdf-reader
+  pg
   pry-rails
   puma (~> 3.11)
   rack-cors
