@@ -29,7 +29,8 @@ class UploadsController < ApplicationController
     @upload = Upload.new(upload_params)
     respond_to do |format|
       if @upload.save
-        @upload.g_iframe(request.domain)
+        #@upload.g_iframe(request.domain)
+        @upload.g_iframe("https://still-oasis-17398.herokuapp.com")
         format.html { redirect_to user_path(current_user.id), notice: 'Upload was successfully created.' }
         format.json { render :show, status: :created, location: @upload }
       else
