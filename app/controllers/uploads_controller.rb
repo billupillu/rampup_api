@@ -1,6 +1,6 @@
 class UploadsController < ApplicationController
   skip_before_action :verify_authenticity_token
-  before_action :authenticate_user!, only: [:index, :show, :destroy,:create]
+  before_action :authenticate_user!, only: [:index, :show, :create]
   before_action :set_upload, only: [:show, :edit, :update, :destroy]
 
   # GET /uploads
@@ -42,6 +42,7 @@ class UploadsController < ApplicationController
 
   # PATCH/PUT /uploads/1
   # PATCH/PUT /uploads/1.json
+  #curl -X PUT -F "upload[course]=999" -F "upload[activity]=770" -F "key=dvVNMMDYbkwiArtDjchjYJDwOSjJuaKhwhiBtvkPIPGoBiBonO" localhost:3000/uploads/3.json
   def update
     cuser = current_user
     if !current_user.present?
@@ -64,7 +65,6 @@ class UploadsController < ApplicationController
 
   # DELETE /uploads/1
   # DELETE /uploads/1.json
-  #curl -X PUT -F "upload[course]=999" -F "upload[activity]=770" -F "key=dvVNMMDYbkwiArtDjchjYJDwOSjJuaKhwhiBtvkPIPGoBiBonO" localhost:3000/uploads/3.json
   def destroy
     @upload.destroy
     respond_to do |format|
